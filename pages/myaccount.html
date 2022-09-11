@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My account</title>
+    <link rel="shortcut icon" href="../assets/logos/favicon_yard_sale.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+            --QS: 'Quicksand', sans-serif;
+            
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            
+            font-family: var(--QS)
+        }
+
+        .myaccount-container {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .myaccount {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .form {
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        
+
+        .title {
+            font-size: var(--lg);
+            margin-bottom: 50px;
+        }
+
+        .label {
+            font-size: var(--sm);
+            font-weight: bold;
+            padding: 4px 0;
+        }
+
+        .input {
+            width: 100%;
+            margin: 4px;
+            border: none;
+            background-color: var(--text-input-field);
+            height: 30px;
+            padding: 4px;
+            border-radius: 8px;
+            font-family: var(--QS);
+            font-size: var(--md);
+            
+        }
+
+        .primary-button {
+            width: 100%;
+            height: 50px;
+            /* margin-top: 50px; */
+            border: none;
+            border-radius: 8px;
+            background-color: var(--hospital-green);
+            color: var(--white);
+            font-weight: 500;
+            font-size: var(--md);
+            font-family: var(--QS);
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="myaccount-container">
+        <div class="myaccount">
+
+            <h1 class="title">My account</h1>
+            <form action="" class="form">
+                <div>
+
+                <label for="name" class="label">Name</label>
+                <input type="text" id="name" class="input" placeholder="Yard Sale">
+                
+                <label for="email" class="label">Email address</label>
+                <input type="text" id="email" class="input" placeholder="yardsale@gmail.com">
+                
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" class="input" placeholder="*************">
+                </div>
+
+                <button class="primary-button">Save</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
