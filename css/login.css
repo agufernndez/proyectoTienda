@@ -1,0 +1,98 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --QS: 'Quicksand', sans-serif;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: var(--QS)
+        }
+
+.form-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /* grid-template-rows: 1fr 2fr 1fr 1fr; */
+}    
+
+.logo {
+    width: 200px;
+    margin-top: 50px;
+}
+.form {
+    width: 300px;
+}
+
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 16px;
+    border: none;
+    background-color: var(--text-input-field);
+    height: 30px;
+    padding: 4px;
+    border-radius: 8px;
+    font-family: var(--QS);
+    font-size: var(--md);
+}
+
+.primary-button {
+    width: 100%;
+    border: none;
+    background-color: var(--hospital-green);
+    height: 50px;
+    border-radius: 8px;
+    color: var(--white);
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--md);
+    font-weight: bold;
+    margin: 20px 0 20px;
+    cursor: pointer;
+}
+
+.form a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    /* margin: 30px 0 130px; */
+    /* margin: 0 auto; */
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    /* no me deja centrar!!!!!!!!!! */
+
+
+}
+
+.singUp-button {
+    width: 300px;
+    border: 1px solid var(--hospital-green);
+    border-radius: 8px;
+    background-color: var(--white);
+    color: var(--hospital-green);
+    height: 50px;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--md);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
