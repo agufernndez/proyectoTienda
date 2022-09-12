@@ -28,10 +28,9 @@ header {
     /* background-color: #C7C7C7; */
 }
 
-.icon {
-    display: flex;
-    flex-direction: row-reverse;
-}
+/* .icon {
+    FALTA COLOCARLO ARRIBA A LA DERECHA
+} */
 
 .title {
     text-transform: uppercase;

@@ -1,0 +1,102 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --QS: 'Quicksand', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--QS)
+}
+
+main {
+    width: 90vw;
+    height: 90vh;
+    margin: 10px auto;
+}
+
+.title {
+    font-size: var(--lg);
+    display: none;
+    margin-bottom: 50px;
+}
+.sectionTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--text-input-field);
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.sectionTotal p {
+    font-weight: bold;
+    font-size: var(--mg);
+}
+
+
+.sectionTotal__info p:nth-child(2) {
+    font-size: var(--sm);
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/* CARD */
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    margin: 20px 0;
+
+}
+
+.card figure {
+    display: flex;
+    align-items: center;
+}
+.card figure img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+.card p {
+    font-weight: bold;
+}
+
+.card figure p {
+    font-size: var(--md);
+    font-weight: 300;
+    color: var(--very-light-pink);
+}
+
+@media screen and (min-width: 730px) {
+
+    main {
+        width: 50vw;
+        min-width: 400pgit x;
+        margin-top: 50px;
+        font-size: var(--lg);
+
+    }
+    .title {
+        display: block;
+    }
+
+    /* .card figure {
+    padding-right: 20px; */
+}
