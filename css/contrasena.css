@@ -85,7 +85,10 @@ body {
     font-family: var(--QS);
     cursor: pointer;
 
-};
+}
 
-
-/* no puedo sacar el logo dsp de los 730px!!!!!!!!!!!!!! */
+@media screen and (min-width: 730px) {
+    .logo{ 
+        display: none;
+    }
+}
