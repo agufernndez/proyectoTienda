@@ -1,0 +1,81 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --QS: 'Quicksand', sans-serif;
+}
+
+body {
+    font-family: var(--QS);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card1-container {
+    width: 120px;
+    height: 200px;
+    margin: 20px;
+}
+
+.card1-container img {
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+
+}
+
+.card1-container__descript {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card1-container__descript figure {
+    width: 40px;
+    height: 40px;
+    margin: 0%;
+}
+
+.card1-container__descript figure img {
+    width: 30px;
+    height: 30px;
+    margin: 0%;
+}
+
+.card1-container__descript-info p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+.card1-container__descript-info p:nth-child(2) {
+    color: var(--very-light-pink);
+    margin-top: 0;
+    margin-bottom: 0%;
+}
+
+@media screen and (min-width: 730px) {
+    .card1-container {
+        width: 240px;
+        height: 340px;
+    }
+    
+    .card1-container img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .card1-container__descript figure img {
+        width: 40px;
+        height: 40px;
+    }
+}
