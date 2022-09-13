@@ -32,6 +32,8 @@ main {
     display: none;
     margin-bottom: 50px;
 }
+
+/* SECTION TOTAL */
 .sectionTotal {
     display: flex;
     justify-content: space-between;

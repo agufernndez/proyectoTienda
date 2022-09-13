@@ -23,40 +23,13 @@ body {
 
 main {
     width: 90vw;
-    height: 90vh;
-    margin: 10px auto;
-}
-
-.title {
-    font-size: var(--lg);
-    display: none;
-    margin-bottom: 50px;
-}
-
-/* SECTION TOTAL */
-.sectionTotal {
+    height: 100vh;
+    margin: 5px auto 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: var(--text-input-field);
-    border-radius: 12px;
-    margin: 20px 0;
 }
 
-.sectionTotal p {
-    font-weight: bold;
-    font-size: var(--mg);
-}
-
-
-.sectionTotal__info p:nth-child(2) {
-    font-size: var(--sm);
-    font-weight: 300;
-    padding-top: 5px;
-}
-
-/* SECTION CARD */
 .card {
     display: flex;
     justify-content: space-between;
@@ -86,19 +59,60 @@ main {
     color: var(--very-light-pink);
 }
 
+.card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card div img {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.sectionTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--text-input-field);
+    border-radius: 12px;
+    /* margin: 20px 0; */
+}
+
+.sectionTotal p {
+    font-weight: bold;
+    font-size: var(--mg);
+}
+
+main button {
+    background-color: var(--hospital-green);
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+    margin: 10px 0;
+
+
+}
+
+main button a {
+    font-weight: bold;
+    font-size: var(--lg);
+    font-family: var(--QS);
+    color: var(--white);
+    text-decoration: none;
+}
+
 @media screen and (min-width: 730px) {
 
     main {
         width: 50vw;
-        min-width: 400pgit x;
-        margin-top: 50px;
+        max-width: 500px;
         font-size: var(--lg);
 
-    }
-    .title {
-        display: block;
-    }
 
-    /* .card figure {
-    padding-right: 20px; */
+    }
 }
