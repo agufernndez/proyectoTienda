@@ -21,6 +21,7 @@ body {
     font-family: var(--QS)
 }
 
+/* *****************NAV BAR********************* */
 nav {
     height: 9vh;
     display: flex;
@@ -66,7 +67,10 @@ nav {
 
 }
 
+
 @media screen and (min-width: 790px) {
+    /* *****************NAV BAR********************* */
+
     nav {
         display: flex;
         justify-content: space-between;

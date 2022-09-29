@@ -8,10 +8,64 @@
     --QS: 'Quicksand', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--QS);
 }
+/* **********NAV BAR****************** */
+nav {
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid var(--very-light-pink);
+    
+}
 
+/* .logo {
+    width: 120px;
+} */
+
+.list-container {
+    display: none;
+}
+
+.email {
+    display: none;
+}
+
+.navBar-right ul {
+    list-style: none;
+}
+
+.navBar-shoppingCart img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+}
+
+.navBar-shoppingCart div {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+
+}
+
+
+/* **********PRODUCTOS****************** */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -19,15 +73,15 @@ body {
 }
 
 .card1-container {
-    width: 120px;
-    height: 200px;
+    width: 200px;
+    height: 270px;
     margin: 20px;
 }
 
 .card1-container img {
     border-radius: 20px;
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 200px;
     object-fit: cover;
 
 }
@@ -63,15 +117,97 @@ body {
     margin-bottom: 0%;
 }
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 790px) {
+
+    /* *****************NAV BAR********************* */
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 20px;
+        /* width: 90vw; */
+    }
+
+
+    .navBar-left {
+        display: flex;
+    }
+
+    .mh-img {
+        display: none;
+    }
+
+    .list-container {
+        display: contents;
+    }
+
+    .list-container ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: 350px;
+        margin:0 30px;
+
+    }
+
+    .list-container ul li a {
+        color: var(--very-light-pink);
+        text-decoration: none;
+        font-size: var(--sm);
+        
+    }
+
+    .list-container ul li a:hover {
+        color: var(--hospital-green);
+        border: 1px solid var(--hospital-green);
+        border-radius: 8px;
+        padding: 4px 8px;
+    }
+
+    .navBar-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* width: 200px; */
+        margin: 0;
+        padding: 0%;
+    }
+
+    .navBar-right ul {
+        min-width: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* nav div:nth-child(2) a{
+        color: var(--hospital-green);
+        font-weight: bold;
+        font-size: var(--sm);
+    } */
+    .email {
+        display: contents;
+        font-size: var(--sm);
+        color: var(--very-light-pink);
+        /* padding-left: 20px; */
+    }
+
+    .navBar-shoppingCart div {
+        top: 10px;
+        right: 35px;
+    }
+
+    /* **********PRODUCTOS****************** */
+
     .card1-container {
-        width: 240px;
+        width: 280px;
         height: 340px;
     }
     
     .card1-container img {
-        width: 240px;
-        height: 240px;
+        width: 100%;
+        height: 280px;
     }
 
     .card1-container__descript figure img {
@@ -79,3 +215,4 @@ body {
         height: 40px;
     }
 }
+
