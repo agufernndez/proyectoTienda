@@ -4,55 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda On-line</title>
+    <title>Yard Sale | Tienda On-line</title>
     <link rel="shortcut icon" href="./assets/logos/favicon_yard_sale.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <nav>
-        <img src="./assets/icons/icon_menu.svg" class="mh-img" alt="">
-        <div class="navBar-left">        
-            <img src="./assets/logos/logo_yard_sale.svg" alt="logo" class="logo">
+    <header>
+        
+        <nav>
+            <img src="./assets/icons/icon_menu.svg" class="mh-img" alt="">
+            <div class="navBar-left">        
+                <img src="./assets/logos/logo_yard_sale.svg" alt="logo" class="logo">
 
-            <div class="list-container">
+                <div class="list-container">
+                    <ul>
+                        <li>
+                            <a href="">All</a>
+                        </li>
+                        <li>
+                            <a href="">Clothes</a>
+                        </li>
+                        <li>
+                            <a href="">Electronics</a>
+                        </li>
+                        <li>
+                            <a href="">Furniture</a>
+                        </li>
+                        <li>
+                            <a href="">Toys</a>
+                        </li>
+                        <li>
+                            <a href="">Others</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navBar-right">
                 <ul>
-                    <li>
-                        <a href="">All</a>
-                    </li>
-                    <li>
-                        <a href="">Clothes</a>
-                    </li>
-                    <li>
-                        <a href="">Electronics</a>
-                    </li>
-                    <li>
-                        <a href="">Furniture</a>
-                    </li>
-                    <li>
-                        <a href="">Toys</a>
-                    </li>
-                    <li>
-                        <a href="">Others</a>
+                    <li class="email" id="email">yardsale@gmail.com</li>
+                    <li class="navBar-shoppingCart">
+                        <img src="./assets/icons/icon_shopping_cart.svg" alt="icon shopping cart">
+                        <div>3</div>
                     </li>
                 </ul>
             </div>
-        </div>
 
-        <div class="navBar-right">
-            <ul>
-                <li class="email">yardsale@gmail.com</li>
-                <li class="navBar-shoppingCart">
-                    <img src="./assets/icons/icon_shopping_cart.svg" alt="icon shopping cart">
-                    <div>3</div>
+            
+
+        </nav>
+        <div class="desktopMenu inactive" id="desktopMenu">
+            <ul class="desktopMenu__ul">
+                <li>
+                    <a href="">My orders</a>
+                </li>
+                <li>
+                    <a href="">My account</a>
+                </li>
+                <li>
+                    <a href="">Sing out</a>
                 </li>
             </ul>
         </div>
+    </header>
 
-    </nav>
 
-    
     <main>
         <section class="cards-container">
             <article class="card1-container">
@@ -158,219 +177,11 @@
                     </figure>
                 </div>
             </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/armchair2.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$190,00</p>
-                        <p>Green Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/armchair.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$180,00</p>
-                        <p>Gray Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/armchair3.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$120,00</p>
-                        <p>Pink Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/audio.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$140,00</p>
-                        <p>Gramophore</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/bike.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/lamp.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$120,00</p>
-                        <p>Lamp</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/oldArmchair.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$130,00</p>
-                        <p>Old Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/vintageWardrobe.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$170,00</p>
-                        <p>Old War</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/armchair2.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$190,00</p>
-                        <p>Green Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/armchair.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$180,00</p>
-                        <p>Gray Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/armchair3.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$120,00</p>
-                        <p>Pink Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/audio.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$140,00</p>
-                        <p>Gramophore</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/bike.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/lamp.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$120,00</p>
-                        <p>Lamp</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/oldArmchair.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$130,00</p>
-                        <p>Old Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/vintageWardrobe.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$170,00</p>
-                        <p>Old War</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            
-
         </section>
     </main>
-    
+
+    <script src="js/index.js"></script>
+
 </body>
+
 </html>

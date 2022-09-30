@@ -64,6 +64,47 @@ nav {
 
 }
 
+/* DESKTOP MENU */
+.inactive {
+    display: none;
+}
+
+.desktopMenu {
+    width: 140px;
+    position: absolute;
+    top: 61px;;
+    right: 0;
+    /* height: auto; */
+    background-color: var(--white);
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.desktopMenu__ul {
+    list-style: none;
+    text-align: right;    
+}
+
+.desktopMenu__ul li {
+    padding: 10px 0;
+}
+
+.desktopMenu__ul li:nth-child(3) {
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.desktopMenu__ul li a{ 
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: var(--QS);
+}
+
+.desktopMenu__ul li:nth-child(3) a{
+    color: var(--hospital-green);
+}
+
 
 /* **********PRODUCTOS****************** */
 .cards-container {
@@ -190,6 +231,7 @@ nav {
         display: contents;
         font-size: var(--sm);
         color: var(--very-light-pink);
+        cursor: pointer;
         /* padding-left: 20px; */
     }
 
