@@ -17,6 +17,8 @@
 body {
     font-family: var(--QS);
 }
+
+
 /* **********NAV BAR****************** */
 nav {
     height: 9vh;
@@ -25,6 +27,10 @@ nav {
     padding: 20px;
     border-bottom: 1px solid var(--very-light-pink);
     
+}
+
+.mh-img {
+    cursor: pointer;
 }
 
 /* .logo {
@@ -64,17 +70,18 @@ nav {
 
 }
 
-/* DESKTOP MENU */
-.inactive {
+    /* **********DESKTOP MENU****************** */
+    .inactive {
     display: none;
 }
+
+   
 
 .desktopMenu {
     width: 140px;
     position: absolute;
     top: 61px;;
     right: 0;
-    /* height: auto; */
     background-color: var(--white);
     border: 1px solid var(--very-light-pink);
     border-radius: 6px;
@@ -106,7 +113,64 @@ nav {
 }
 
 
-/* **********PRODUCTOS****************** */
+
+ /* **********MOBILE MENU****************** */
+.mobileMenu {
+    width: 100%;
+    height: 100vh;
+    padding: 30px 30px 0;
+    background-color: var(--white);
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: var(--lg);
+    margin-bottom: 30px;
+}
+
+.mobileMenu__list-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+.mobileMenu__list {
+    list-style: none;
+}
+
+.mobileMenu__list-container ul:nth-child(2) {
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.mobileMenu__list-modified {
+    padding: 20px 0 60px;
+}
+
+.mobileMenu__list li {
+    padding: 15px 0;
+}
+
+.mobileMenu__list li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    /* padding: 40px 0; */
+}
+
+.singout p{
+    color: var(--very-light-pink);
+}
+
+.singout a {
+    text-decoration: none;
+    color: var(--hospital-green);
+    font-weight: bold;
+}
+
+
+    /* **********PRODUCTOS****************** */
+
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +233,6 @@ nav {
         margin: 0 20px;
         /* width: 90vw; */
     }
-
 
     .navBar-left {
         display: flex;
@@ -239,6 +302,18 @@ nav {
         top: 10px;
         right: 35px;
     }
+
+
+    /* **********DESKTOP MENU****************** */
+    /* .desktopMenu {
+        
+    } */
+
+    /* **********MOBILE MENU****************** */
+    .mobileMenu {
+        display: none;
+    }
+    
 
     /* **********PRODUCTOS****************** */
 
