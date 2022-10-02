@@ -75,8 +75,6 @@ nav {
     display: none;
 }
 
-   
-
 .desktopMenu {
     width: 140px;
     position: absolute;
@@ -168,6 +166,112 @@ nav {
     font-weight: bold;
 }
 
+    /* **********ASIDE SHOPPING CART****************** */
+    .inactive {
+        display: none;
+    }
+    
+.shoppingCart {
+    width: 90vw;
+    height: 100vh;
+    margin: 5px auto 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.shoppingCart__tittle {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0;
+}
+
+.shoppingCart__tittle p {
+    color: var(--very-light-pink);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-right: 10px;
+}
+
+.shoppingCart__tittle-h1 {
+    font-size: 1.3rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    margin: 20px 0;
+
+}
+
+.card figure {
+    display: flex;
+    align-items: center;
+}
+.card figure img {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+.card p {
+    font-weight: bold;
+}
+
+.card figure p {
+    font-size: var(--md);
+    font-weight: 300;
+    color: var(--very-light-pink);
+}
+
+.card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card div img {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.sectionTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--text-input-field);
+    border-radius: 12px;
+    /* margin: 20px 0; */
+}
+
+.sectionTotal p {
+    font-weight: bold;
+    font-size: var(--mg);
+}
+
+.shoppingCart button {
+    background-color: var(--hospital-green);
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+    margin: 10px 0;
+
+
+}
+
+.shoppingCart button a {
+    font-weight: bold;
+    font-size: var(--lg);
+    font-family: var(--QS);
+    color: var(--white);
+    text-decoration: none;
+}
 
     /* **********PRODUCTOS****************** */
 
@@ -301,6 +405,7 @@ nav {
     .navBar-shoppingCart div {
         top: 10px;
         right: 35px;
+        cursor: pointer;
     }
 
 
@@ -314,6 +419,22 @@ nav {
         display: none;
     }
     
+
+    /* **********ASIDE SHOPPING CART****************** */
+    .shoppingCart {
+        position: absolute;
+        right: 0%;
+        background-color: var(--white);
+        width: 50vw;
+        max-width: 500px;
+        font-size: var(--lg);
+        padding-left: 30px;
+    }
+
+
+
+
+
 
     /* **********PRODUCTOS****************** */
 
