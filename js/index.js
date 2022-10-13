@@ -1,9 +1,11 @@
 console.log("JS funcionando")
 
 // VENTANA SING UP DESDE EL MAIL. Si el shopping cart esta abierto, cerrarlo automaticamente.
-const email = document.getElementById("email")
+let email = document.getElementById("email")
 const desktopMenu = document.getElementById("desktopMenu")
-const isEmailClosed = email.classList.contains("inactive")
+const shoppingCart = document.getElementById("shoppingCart")
+
+// como hacer para que si el widht de la pantalla es menos de 730px, se le agregue la clase "inactive" automaticamente???
 
 email.onclick=()=> {
     const isShoppingCartClosed = shoppingCart.classList.contains("inactive")
@@ -12,7 +14,6 @@ email.onclick=()=> {
     }
     desktopMenu.classList.toggle("inactive")
 }
-// como hacer para poner que si es menos de 730px de pantalla, que no aparezca???
 
 
 
@@ -20,8 +21,6 @@ email.onclick=()=> {
 // MOBILE MENU - Que aparezca y desaparezca cuando toco el iciono de toggle menu. Si el shopping cart está abierto, se cierra automaticamente.
 const mobileMenu = document.getElementById("mobileMenu")
 const toggleMenu = document.getElementById("toggleMenu")
-
-
 
 toggleMenu.onclick =() => {
     const isShoppingCartClosed = shoppingCart.classList.contains("inactive");
@@ -34,9 +33,8 @@ toggleMenu.onclick =() => {
 }
 
 
-// SHOPPING CART - Que aparezca y desaparezca cuando clickeo el icono del carrito. Ademas, si el mobile menu está abierto, se cierra en el mismo instante.
+// SHOPPING CART - Que aparezca y desaparezca cuando clickeo el icono del carrito. Ademas, si el mobile menu y/o el email está abierto, se cierra en el mismo instante.
 const shoppingCartIcon = document.getElementById("navBar-shoppingCart");
-const shoppingCart = document.getElementById("shoppingCart")
 
 shoppingCartIcon.onclick = () => {
     const isMobileMenuClosed = mobileMenu.classList.contains("inactive")
@@ -44,5 +42,13 @@ shoppingCartIcon.onclick = () => {
     if (!isMobileMenuClosed) {
         mobileMenu.classList.add("inactive")
     }
-    shoppingCart.classList.toggle("inactive")
+    shoppingCart.classList.toggle("inactive");
+
+    let isDesktopMenuClosed = desktopMenu.classList.contains("inactive")
+
+// FUNCIONA, pero como hago para que se hagan las dos cosas a la vez? 
+    if (!isDesktopMenuClosed) {
+        desktopMenu.classList.add("inactive");     
+        shoppingCart.classList.toggle("inactive");
+    }
 }
