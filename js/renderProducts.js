@@ -175,6 +175,11 @@ agregarAlCarrito();
 
 
 
+
+// AYUDAAAAAAAAAA
+
+
+
 // eliminar productos del carrito cuando se aprieta la imagen de la flecha
 
 // const eliminarProducto = () => {

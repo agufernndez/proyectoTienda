@@ -53,6 +53,7 @@ nav {
     position: relative;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 
 }
 
@@ -171,7 +172,8 @@ nav {
     
 .shoppingCart {
     width: 70vw;
-    height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
     margin: 5px auto 0;
     /* OJO ACA!!!! SI LE PONGO EL DISPLAY FLEX ACA, NO ME FUNCIONA EL DISPLAY:NONE DE LA CLASE "INACTIVE". 
     no es necesario el display flex (column)porque al ser elemento de bloque solitos se ponen uno abajo del otro!!!! */
@@ -240,8 +242,9 @@ nav {
 
 .sectionTotal {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-top: 20px;
     padding: 20px;
     background-color: var(--text-input-field);
     border-radius: 12px;
@@ -251,6 +254,7 @@ nav {
 .sectionTotal p {
     font-weight: bold;
     font-size: var(--mg);
+    padding-right: 30px;
 }
 
 .shoppingCart button {
