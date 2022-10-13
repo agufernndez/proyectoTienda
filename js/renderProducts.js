@@ -149,7 +149,11 @@ const agregarAlCarrito = () => {
                     </article>
                 `
 
-                // ACA SUMA EL TOTAL
+                // ACA SUMA EL TOTAL  y que aparezca en el p id="sectionTotal"
+
+                // 1ro: tomar el precio de CADA producto (armar un array)
+                // 2do: hacer una suma de todos los precios, guardarlo en una variable
+                // 3ro: mostrar el valor de esa variable por p
             total.push(producto.precio);
             console.log(total);
 
@@ -188,17 +192,3 @@ agregarAlCarrito();
                 // let indiceProductoEminar = productos.indexOf(`eliminarProducto${producto.id}`)
 
 // 2do uso el metodo splice = carrito.splice(indiceProductoEminar,1)
-
-// sumar el total y que aparezca en el p id="totalCarrito"
-
-// 1ro: tomar el precio de CADA producto (armar un array)
-// 2do: hacer una suma de todos los precios, guardarlo en una variable
-// 3ro: mostrar el valor de esa variable por p
-
-// const sumarTotal = () => {
-//     carrito.forEach(producto => {
-//         const total += carrito.push(producto.precio)
-//         console.log(total);
-//     });
-// }
-// sumarTotal();
