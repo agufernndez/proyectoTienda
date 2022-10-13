@@ -113,181 +113,51 @@
         </div>
     </header>
 
-    <div class="shoppingCart inactive" id="shoppingCart">
+    <aside class="shoppingCart inactive" id="shoppingCart">
 
         <section class="shoppingCart__tittle">
             <p> < </p>
             <h1 class="shoppingCart__tittle-h1">My order</h1>
 
         </section>
-        <section class="sectionCards">
-            <article class="card">
-                <figure >
-                    <img src="../assets/img/armchair2.jpg" alt="imagen producto">
-                    <p>Green Armchair</p>
-                </figure>
-                <div>
-                    <p>$190,00</p>
-                    <img src="../assets/icons/icon_close.png" alt="">
-                </div>
-            </article>
-
-            <article class="card">
-                <figure >
-                    <img src="../assets/img/armchair2.jpg" alt="imagen producto">
-                    <p>Green Armchair</p>
-                </figure>
-                <div>
-                    <p>$190,00</p>
-                    <img src="../assets/icons/icon_close.png" alt="">
-                </div>
-            </article>
-
-            <article class="card">
-                <figure >
-                    <img src="../assets/img/armchair2.jpg" alt="imagen producto">
-                    <p>Green Armchair</p>
-                </figure>
-                <div>
-                    <p>$190,00</p>
-                    <img src="../assets/icons/icon_close.png" alt="">
-                </div>
-            </article>
-
-            <article class="card">
-                <figure >
-                    <img src="../assets/img/armchair2.jpg" alt="imagen producto">
-                    <p>Green Armchair</p>
-                </figure>
-                <div>
-                    <p>$190,00</p>
-                    <img src="../assets/icons/icon_close.png" alt="">
-                </div>
-            </article>
+        <section class="sectionCards" id="productosCarrito">
+            <!-- aca van los productos renderizados en el carrito -->
             
         </section>
 
-        <section class="sectionTotal">
-            <p>Total</p>
-            <p>$760,00</p>
+        <section class="sectionTotal" id="sectionTotal">
+            <!-- <p>Total</p>
+            <p id="totalCarrito"></p> -->
         </section>
 
         <button>
             <a href="">Checkout</a>
         </button>
-    </div>
-
+    </aside>
 
     <main>
-        <section class="cards-container">
-            <article class="card1-container">
-                <img src="./assets/img/armchair2.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$190,00</p>
-                        <p>Green Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/armchair.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$180,00</p>
-                        <p>Gray Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/armchair3.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$120,00</p>
-                        <p>Pink Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/audio.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$140,00</p>
-                        <p>Gramophore</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/bike.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$120,00</p>
-                        <p>Bike</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/lamp.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$120,00</p>
-                        <p>Lamp</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/oldArmchair.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$130,00</p>
-                        <p>Old Armchair</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="card1-container">
-                <img src="./assets/img/vintageWardrobe.jpg" alt="imagen producto">
-                <div class="card1-container__descript">
-                    <div class="card1-container__descript-info">
-                        <p>$170,00</p>
-                        <p>Old War</p>
-                    </div>
-                    <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo">
-                    </figure>
-                </div>
-            </article>
+        <section class="cards-container" id="cards-container">
+            <!-- renderizar productos desde renderProducts.js -->
         </section>
     </main>
 
+    <script src="./js/renderProducts.js"></script>
     <script src="js/index.js"></script>
+
 
 </body>
 
 </html>
+
+<!-- `
+    <article class="card">
+                <figure >
+                    <img src="${producto.img}" alt="imagen producto">
+                    <p>${producto.nombre}</p>
+                </figure>
+                <div>
+                    <p>$${producto.precio}</p>
+                    <img src="../assets/icons/icon_close.png" alt="">
+                </div>
+            </article>
+        ` -->
