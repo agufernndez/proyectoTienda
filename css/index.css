@@ -327,6 +327,10 @@ a {
     no es necesario el display flex (column)porque al ser elemento de bloque solitos se ponen uno abajo del otro!!!! */
 }
 
+#closeMyOrder {
+    cursor: pointer;
+}
+
 .shoppingCart__tittle {
     display: flex;
 

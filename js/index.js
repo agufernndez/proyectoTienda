@@ -53,5 +53,10 @@ shoppingCartIcon.onclick = () => {
     }
 }
 
+// CERRAR EL CARRITO CUANDO APRIETO EL > QUE ESTA AL LADO DE MY ORDER
+const closeMyOrderIcon = document.getElementById("closeMyOrder");
+closeMyOrderIcon.onclick = () => {
+    shoppingCart.classList.toggle("inactive");
 
+}
 // PARA LA PROXIMA ENTREGA AGREGAR EL CARRITO AL STORAGE
