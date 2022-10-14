@@ -7,15 +7,15 @@
     <title>Contraseña</title>
     <link rel="shortcut icon" href="../assets/logos/favicon_yard_sale.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/contrasena.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <div class="login">
-        <div class="form-container">
-            <img src="../assets/logos/logo_yard_sale.svg" alt="logo Yard Sale" class="logo">
+    <div class="password">
+        <div class="form-containerPassword">
+            <img src="../assets/logos/logo_yard_sale.svg" alt="logo Yard Sale" class="logoPassword">
 
-            <h1 class="title">Create a new password</h1>
-            <p class="subtitle">Enter a new password for your account</p>
+            <h1 class="titlePassword">Enter a new password for your account</h1>
+            <!-- <p class="subtitle">Enter a new password for your account</p> -->
             <form action="" class="form">
                 <label for="password" class="label">Password</label>
                 <input type="password" id="password" placeholder="*************" class="input input-password"> 
@@ -24,7 +24,10 @@
                 <input type="password" id="password" placeholder="*************" class="input input-password">
                 <!-- el id del INPUT tiene qiue ser igual que el for del LABEL -->
 
-                <input type="submit" value="Confirm new password" class="primary-button login-button">
+                <!-- <input type="submit" value="Confirm new password" class="primary-button login-button"> -->
+                <button class="primary-button login-button" primary-button-a>
+                    <a href="./login.html" id="primary-button-a">Confirm new password</a>
+                </button>
 
             </form>
         </div>

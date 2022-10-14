@@ -52,3 +52,6 @@ shoppingCartIcon.onclick = () => {
         shoppingCart.classList.toggle("inactive");
     }
 }
+
+
+// PARA LA PROXIMA ENTREGA AGREGAR EL CARRITO AL STORAGE
