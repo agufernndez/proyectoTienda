@@ -430,21 +430,20 @@ a {
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .card1-container {
-    width: 200px;
-    height: 270px;
+    width: 120px;
+    height: 210px;
     margin: 20px;
 }
 
 .card1-container img {
     border-radius: 20px;
     width: 100%;
-    height: 200px;
+    height: 120px;
     object-fit: cover;
-
 }
 
 .card1-container__descript {
@@ -478,6 +477,47 @@ a {
     margin-top: 0;
     margin-bottom: 0%;
 }
+
+    /* **********MY ORDERS PAGE****************** */
+
+    .mainMyOrders {
+        width: 90vw;
+        height: 90vh;
+        margin: 10px auto;
+    }
+    
+    .titleMyOrders {
+        font-size: var(--lg);
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .sectionTotalMyOrders {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 12px;
+        margin: 40px 0;
+    }
+
+    .sectionTotalMyOrders__price {
+        width: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sectionTotalMyOrders p {
+        font-weight: bold;
+        font-size: var(--mg);
+    }
+    
+    
+    .sectionTotalMyOrders__info p:nth-child(2) {
+        font-size: var(--sm);
+        font-weight: 300;
+        padding-top: 5px;
+    }
+
 
     /* **********MY ACCOUNT PAGE****************** */
 
@@ -655,7 +695,17 @@ a {
         padding-left: 30px;
     }
 
+    /* **********MY ORDERS PAGE****************** */
+    .mainMyOrders {
+        width: 50vw;
+        min-width: 400pgit x;
+        margin-top: 50px;
+        font-size: var(--lg);
 
+    }
+    .titleMyOrders {
+        display: block;
+    }
 
 
 
