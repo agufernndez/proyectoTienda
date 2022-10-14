@@ -221,6 +221,45 @@ nav {
     color: var(--hospital-green);
 }
 
+ /* **********EMAIL****************** */
+.email-container {
+    width: 350px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.titleEmail {
+    font-size: var(--lg);
+    margin: 60px 0 15px;
+}
+
+.subtitleEmail {
+    font-size: var(--lg);
+    color: var(--very-light-pink);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* .logo-email {
+    margin: 50px;
+}  */
+
+.under-button {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+
+a {
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+
+
 
  /* **********MOBILE MENU****************** */
 .mobileMenu {

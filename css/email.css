@@ -37,12 +37,12 @@ body {
     margin-bottom: 50px;
 }
 
-.title {
+.titleEmail {
     font-size: var(--lg);
     margin-bottom: 12px;
 }
 
-.subtitle {
+.subtitleEmail {
     font-size: var(--lg);
     color: var(--very-light-pink);
     /* margin-bottom: 50px; */
