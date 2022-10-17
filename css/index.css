@@ -17,7 +17,44 @@
 body {
     font-family: var(--QS);
 }
+/* /* **********PORTADA****************** */
+.portada {
+    position: relative;
+    background: var(--text-input-field);
+    height: 100vh;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: flex;
+    justify-content: center;
+  }
 
+.imgPortada {
+    width: 200px;
+    margin-top: -20vh;
+}
+
+.portada:hover .imgPortada{
+    transform: scale(2);
+    transition: transform 4s;
+}
+/* /* **********PORTADA 2****************** */
+.portada2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hospital-green);
+}
+
+.pelota {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: var(--white);
+    margin: 10px;
+    box-shadow: 2px 2px 4px 0px rgba(255,255,255,0.75);
+
+}
 
 /* **********NAV BAR****************** */
 nav {

@@ -99,7 +99,28 @@ const productos = [
     
 
 ];
-const carrito = [];
+
+let carrito = []
+
+// let carrito;
+// if (localStorage.getItem("carrito")!=null){
+//     carrito = localStorage.setItem("carrito", JSON.parse(carrito));
+//     document.getElementById("productosCarrito").innerHTML += `
+//             <article class="card" id="productoNombre${producto.id}">
+//                         <figure >
+//                             <img src="${producto.img}" alt="imagen producto">
+//                             <p>${producto.nombre}</p>
+//                         </figure>
+//                         <div>
+//                             <p>$${producto.precio}</p>
+//                             <img src="../assets/icons/icon_close.png" alt="" id="eliminarProducto${producto.id}">
+//                         </div>
+//                     </article>
+//                 `
+
+// } else {
+//     carrito = []
+// }
 const total = [];
 
 
@@ -136,6 +157,10 @@ const agregarAlCarrito = () => {
         document.getElementById(`botonAgregarCart${producto.id}`).onclick = () => {
             carrito.push(producto);
             console.log("agregue un producto al carrito");
+            for (let i=0; i < carrito.length ; i++){
+                console.log("Cantidad de productos en el carrito: "+(i+1));
+                document.getElementById("shoppingCart-counter").innerHTML = `<p>${i+1}</p>`
+            }
             document.getElementById("productosCarrito").innerHTML += `
             <article class="card" id="productoNombre${producto.id}">
                         <figure >
@@ -148,12 +173,14 @@ const agregarAlCarrito = () => {
                         </div>
                     </article>
                 `
+            localStorage.setItem("carrito", JSON.stringify(carrito))
 
-                // ACA SUMA EL TOTAL  y que aparezca en el p id="sectionTotal"
 
-                // 1ro: tomar el precio de CADA producto (armar un array)
-                // 2do: hacer una suma de todos los precios, guardarlo en una variable
-                // 3ro: mostrar el valor de esa variable por p
+            // ACA SUMA EL TOTAL  y que aparezca en el p id="sectionTotal"
+
+            // 1ro: tomar el precio de CADA producto (armar un array)
+            // 2do: hacer una suma de todos los precios, guardarlo en una variable
+            // 3ro: mostrar el valor de esa variable por p
             total.push(producto.precio);
             console.log(total);
 
@@ -168,6 +195,7 @@ const agregarAlCarrito = () => {
             <p id="totalCarrito">$${sumaTotal}</p>
             `
         }
+        
     });
 }
 agregarAlCarrito();
@@ -176,9 +204,10 @@ agregarAlCarrito();
 
 
 
+
+
+
 // AYUDAAAAAAAAAA
-
-
 
 // eliminar productos del carrito cuando se aprieta la imagen de la flecha
 
@@ -197,3 +226,9 @@ agregarAlCarrito();
                 // let indiceProductoEminar = productos.indexOf(`eliminarProducto${producto.id}`)
 
 // 2do uso el metodo splice = carrito.splice(indiceProductoEminar,1)
+
+
+// guardar carrito en el storage
+const carritoJSON = JSON.stringify(carrito)
+console.log("carrito JSON:" +carritoJSON);
+
