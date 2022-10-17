@@ -58,11 +58,15 @@ body {
 
 /* **********NAV BAR****************** */
 nav {
+    width: 100vw;
     height: 9vh;
+    background-color: var(--white);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     border-bottom: 1px solid var(--very-light-pink);
+    position: fixed;
     
 }
 
@@ -472,6 +476,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-top: 9vh;
 }
 
 .card1-container {
@@ -639,8 +644,7 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 20px;
-        /* width: 90vw; */
+        /* margin: 0 20px; */
     }
 
     .navBar-left {
@@ -682,9 +686,6 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* width: 200px; */
-        margin: 0;
-        padding: 0%;
     }
 
     .navBar-right ul {
@@ -694,11 +695,10 @@ a {
         align-items: center;
     }
 
-    /* nav div:nth-child(2) a{
-        color: var(--hospital-green);
-        font-weight: bold;
-        font-size: var(--sm);
-    } */
+    .navBar-right ul li {
+        padding: 10px;
+    }
+
     .email {
         display: contents;
         font-size: var(--sm);
@@ -709,7 +709,7 @@ a {
 
     .navBar-shoppingCart div {
         top: 10px;
-        right: 35px;
+        right: 30px;
         cursor: pointer;
     }
 
