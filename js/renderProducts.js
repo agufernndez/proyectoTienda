@@ -101,6 +101,13 @@ const productos = [
 ];
 
 let carrito = []
+// const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+// guardar carrito en el storage
+const carritoJSON = JSON.stringify(carrito)
+console.log("carrito JSON:" +carritoJSON);
+
+
 
 // let carrito;
 // if (localStorage.getItem("carrito")!=null){
@@ -227,8 +234,4 @@ agregarAlCarrito();
 
 // 2do uso el metodo splice = carrito.splice(indiceProductoEminar,1)
 
-
-// guardar carrito en el storage
-const carritoJSON = JSON.stringify(carrito)
-console.log("carrito JSON:" +carritoJSON);
 

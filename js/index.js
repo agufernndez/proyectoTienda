@@ -9,14 +9,8 @@ const shoppingCart = document.getElementById("shoppingCart")
 
 email.onclick=()=> {
     const isShoppingCartClosed = shoppingCart.classList.contains("inactive")
-    if(!isShoppingCartClosed){
-        shoppingCart.classList.add("inactive")
-    }
-    desktopMenu.classList.toggle("inactive")
+    !isShoppingCartClosed ? shoppingCart.classList.add("inactive") : desktopMenu.classList.toggle("inactive");
 }
-
-
-
 
 // MOBILE MENU - Que aparezca y desaparezca cuando toco el iciono de toggle menu. Si el shopping cart está abierto, se cierra automaticamente.
 const mobileMenu = document.getElementById("mobileMenu")
@@ -25,11 +19,7 @@ const toggleMenu = document.getElementById("toggleMenu")
 toggleMenu.onclick =() => {
     const isShoppingCartClosed = shoppingCart.classList.contains("inactive");
 
-    if (!isShoppingCartClosed){
-        shoppingCart.classList.add("inactive")
-    }
-    mobileMenu.classList.toggle("inactive")
-
+    !isShoppingCartClosed ? (shoppingCart.classList.add("inactive"), mobileMenu.classList.toggle("inactive")) : mobileMenu.classList.toggle("inactive")
 }
 
 
@@ -38,19 +28,11 @@ const shoppingCartIcon = document.getElementById("navBar-shoppingCart");
 
 shoppingCartIcon.onclick = () => {
     const isMobileMenuClosed = mobileMenu.classList.contains("inactive")
+    !isMobileMenuClosed ? (mobileMenu.classList.add("inactive") , shoppingCart.classList.toggle("inactive")) : shoppingCart.classList.toggle("inactive");
 
-    if (!isMobileMenuClosed) {
-        mobileMenu.classList.add("inactive")
-    }
-    shoppingCart.classList.toggle("inactive");
 
-    let isDesktopMenuClosed = desktopMenu.classList.contains("inactive")
-
-// FUNCIONA, pero como hago para que se hagan las dos cosas a la vez? 
-    if (!isDesktopMenuClosed) {
-        desktopMenu.classList.add("inactive");     
-        shoppingCart.classList.toggle("inactive");
-    }
+    const isDesktopMenuClosed = desktopMenu.classList.contains("inactive")
+    !isDesktopMenuClosed ? (desktopMenu.classList.add("inactive"), shoppingCart.classList.toggle("inactive")) : shoppingCart.classList.toggle("inactive");
 }
 
 // CERRAR EL CARRITO CUANDO APRIETO EL > QUE ESTA AL LADO DE MY ORDER
