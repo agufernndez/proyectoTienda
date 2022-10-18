@@ -104,7 +104,7 @@ let carrito = []
 // const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 // guardar carrito en el storage
-const carritoJSON = JSON.stringify(carrito)
+let carritoJSON = JSON.stringify(carrito)
 console.log("carrito JSON:" +carritoJSON);
 
 

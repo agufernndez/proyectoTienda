@@ -31,8 +31,8 @@ shoppingCartIcon.onclick = () => {
     !isMobileMenuClosed ? (mobileMenu.classList.add("inactive") , shoppingCart.classList.toggle("inactive")) : shoppingCart.classList.toggle("inactive");
 
 
-    const isDesktopMenuClosed = desktopMenu.classList.contains("inactive")
-    !isDesktopMenuClosed ? (desktopMenu.classList.add("inactive"), shoppingCart.classList.toggle("inactive")) : shoppingCart.classList.toggle("inactive");
+    // const isDesktopMenuClosed = desktopMenu.classList.contains("inactive")
+    // !isDesktopMenuClosed ? (desktopMenu.classList.add("inactive"), shoppingCart.classList.toggle("inactive")) : shoppingCart.classList.toggle("inactive");
 }
 
 // CERRAR EL CARRITO CUANDO APRIETO EL > QUE ESTA AL LADO DE MY ORDER
