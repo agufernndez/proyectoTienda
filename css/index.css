@@ -30,6 +30,12 @@ body {
 
 
 /* **********LOG IN PAGE****************** */
+/* para el efecto de inicio:
+1. Diseñas cada capa por separado.
+2. Ponerles z-index segun la ubicacion en el eje Z.
+3. Position absolute todas para que esten en el mismo espacio 
+4. Generar animaciones con @keyframe y todo lo que conlleva.*/
+
 /* email */
 
 .bodyLogin {
@@ -127,7 +133,7 @@ body {
     z-index: 3;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 
-    animation: portadaLogo 3.5s linear forwards;
+    animation: portadaLogo 2.5s linear forwards;
     
   }
 
@@ -135,7 +141,6 @@ body {
     0% {
         opacity: 1;
         visibility: visible;
-
     }
 
     95% {
@@ -155,7 +160,31 @@ body {
 
 .imgPortada {
     width: 200px;
+    animation: imgPortada 3.5s linear ;
 }
+
+@keyframes imgPortada {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    
+    50% {
+        transform: scale(1.4);
+    }
+
+    75% {
+        transform: scale(1.6);
+    }
+    100% {
+        transform: scale(2);
+
+    }
+    
+}
+
 /* portada 2 */
 .portada2 {
     position: absolute;
@@ -166,16 +195,17 @@ body {
     justify-content: center;
     background-color: var(--hospital-green);
     z-index: 2;
-    animation: portadaLoader 7s linear forwards;
+    animation: portadaLoader 5s linear forwards;
 }
 
 @keyframes portadaLoader {
     0% {
+        animation-delay: 3.5s;
         opacity: 1;
         visibility: visible;
-
     }
 
+    
     95% {
         opacity: 1;
     }
@@ -208,22 +238,26 @@ body {
 .pelota3 {
     animation-delay: 0.6s;
 }
+
 @keyframes pelotitas {
     0% {
-        transform: scale(0.3);
+        transform: scale(0.5);
     }
 
-    40% {
-        transform: scale(1.1);
+    25% {
+        transform: scale(1);
 
     }
     
     50% {
-        transform: scale(1.1);
+        transform: scale(1.4);
+    }
+    75% {
+        transform: scale(1);
     }
 
     100% {
-        transform: scale(0.2);
+        transform: scale(0.5);
     }
 }
 
