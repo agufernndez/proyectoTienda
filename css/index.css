@@ -424,7 +424,7 @@ a {
     width: 70vw;
     height: fit-content;
     min-height: 100vh;
-    margin: 5px auto 0;
+    margin: 0 auto;
     /* OJO ACA!!!! SI LE PONGO EL DISPLAY FLEX ACA, NO ME FUNCIONA EL DISPLAY:NONE DE LA CLASE "INACTIVE". 
     no es necesario el display flex (column)porque al ser elemento de bloque solitos se ponen uno abajo del otro!!!! */
 }
@@ -438,6 +438,7 @@ a {
 
     align-items: center;
     margin: 10px 0 0;
+    padding-top: 12vh;
 }
 
 .shoppingCart__tittle p {
@@ -648,10 +649,9 @@ a {
    
 }
 
-.title {
+.titleMyAccount {
     font-size: var(--lg);
     margin-bottom: 50px;
-    font-family: var(--QS)
 
 }
 
@@ -796,6 +796,10 @@ a {
         max-width: 500px;
         font-size: var(--lg);
         padding-left: 30px;
+    }
+
+    .shoppingCart__tittle {
+        padding-top: 0;
     }
 
     /* **********MY ORDERS PAGE****************** */
