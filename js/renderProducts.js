@@ -2,97 +2,97 @@
 const productos = [
     {
         id: 1,
-        img: "./assets/img/armchair2.jpg",
+        img: "../assets/img/armchair2.jpg",
         nombre: "Green Armchair",
         precio: 190,
     },
     {
         id: 2,
-        img: "./assets/img/armchair.jpg",
+        img: "../assets/img/armchair.jpg",
         nombre: "Gray Armchair",
         precio: 180,
     },
     {
         id: 3,
-        img: "./assets/img/armchair3.jpg",
+        img: "../assets/img/armchair3.jpg",
         nombre: "Pink Armchair",
         precio: 120,
     },
     {
         id: 4,
-        img: "./assets/img/audio.jpg",
+        img: "../assets/img/audio.jpg",
         nombre: "Gramophore",
         precio: 140,
     },
     {
         id: 5,
-        img: "./assets/img/bike.jpg",
+        img: "../assets/img/bike.jpg",
         nombre: "Bike",
         precio: 120,
     },
     {
         id: 6,
-        img: "./assets/img/lamp.jpg",
+        img: "../assets/img/lamp.jpg",
         nombre: "Lamp",
         precio: 120,
     },
     {
         id: 7,
-        img: "./assets/img/oldArmchair.jpg",
+        img: "../assets/img/oldArmchair.jpg",
         nombre: "Old Armchair",
         precio: 130,
     },
     {
         id: 8,
-        img: "./assets/img/vintageWardrobe.jpg",
+        img: "../assets/img/vintageWardrobe.jpg",
         nombre: "Old War",
         precio: 170
     },
     {
         id: 9,
-        img: "./assets/img/armchair2.jpg",
+        img: "../assets/img/armchair2.jpg",
         nombre: "Green Armchair",
         precio: 190
     },
     {
         id: 10,
-        img: "./assets/img/armchair.jpg",
+        img: "../assets/img/armchair.jpg",
         nombre: "Gray Armchair",
         precio: 180
     },
     {
         id: 11,
-        img: "./assets/img/armchair3.jpg",
+        img: "../assets/img/armchair3.jpg",
         nombre: "Pink Armchair",
         precio: 120
     },
     {
         id: 12,
-        img: "./assets/img/audio.jpg",
+        img: "../assets/img/audio.jpg",
         nombre: "Gramophore",
         precio: 140
     },
     {
         id: 13,
-        img: "./assets/img/bike.jpg",
+        img: "../assets/img/bike.jpg",
         nombre: "Bike",
         precio: 120
     },
     {
         id: 14,
-        img: "./assets/img/lamp.jpg",
+        img: "../assets/img/lamp.jpg",
         nombre: "Lamp",
         precio: 120
     },
     {
         id: 15,
-        img: "./assets/img/oldArmchair.jpg",
+        img: "../assets/img/oldArmchair.jpg",
         nombre: "Old Armchair",
         precio: 130
     },
     {
         id: 16,
-        img: "./assets/img/vintageWardrobe.jpg",
+        img: "../assets/img/vintageWardrobe.jpg",
         nombre: "Old War",
         precio: 170
     }
@@ -144,7 +144,7 @@ const renderizarProductos = () => {
                         <p>${producto.nombre}</p>
                     </div>
                     <figure>
-                        <img src="./assets/icons/bt_add_to_cart.svg" alt="add logo" id="botonAgregarCart${producto.id}">
+                        <img src="../assets/icons/bt_add_to_cart.svg" alt="add logo" id="botonAgregarCart${producto.id}">
                     </figure>
                 </div>
             </article>
