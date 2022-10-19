@@ -20,7 +20,7 @@ console.log("js de inputs");
 
 // ESTO FUNCIONA PERO NO SE PONE EL COLOR DEL FONDO NI DEL BORDE
 let password = document.getElementById("password2")
-password.onclick=()=> {
-    password.classList.add("fondoVerde")
-    console.log("toque el input")
+password.onfocus=()=> {
+    password.classList.add("fondoVerde");
+    console.log("focus en el input")
 }
