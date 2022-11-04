@@ -39,5 +39,4 @@ shoppingCartIcon.onclick = () => {
 const closeMyOrderIcon = document.getElementById("closeMyOrder");
 closeMyOrderIcon.onclick = () => {
     shoppingCart.classList.toggle("inactive");
-
 }
