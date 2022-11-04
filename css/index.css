@@ -747,6 +747,13 @@ a {
         
     }
 
+    #currentView {
+        color: var(--hospital-green);
+        border: 1px solid var(--hospital-green);
+        border-radius: 8px;
+        padding: 4px 8px;
+    }
+
     .list-container ul li a:hover {
         color: var(--hospital-green);
         border: 1px solid var(--hospital-green);
