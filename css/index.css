@@ -662,7 +662,7 @@ a {
 
 .input {
     width: 100%;
-    margin: 4px;
+    margin: 4px 0 20px;
     border: none;
     background-color: var(--text-input-field);
     height: 30px;
@@ -670,7 +670,6 @@ a {
     border-radius: 8px;
     font-family: var(--QS);
     font-size: var(--md);
-    
 }
 
 .primary-button {
