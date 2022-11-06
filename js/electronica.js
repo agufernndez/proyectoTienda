@@ -34,6 +34,6 @@ const productos = [
         id: 7,
         img: "../assets/img/electronica/electronica7.jpeg",
         nombre: "Apple AirPods con estuche de carga - Blanco",
-        precio: 130,
+        precio: 30000,
     }
 ];

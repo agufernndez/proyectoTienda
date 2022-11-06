@@ -118,6 +118,41 @@ const productos = [
         img: "../assets/img/juguetes/juguete4.jpg",
         nombre: "Juguete 4",
         precio: 4700,
+    },
+    {
+        id: 21,
+        img: "../assets/img/electronica/electronica1.jpeg",
+        nombre: "iPhone 13 Plateado",
+        precio: 270000,
+    },
+    {
+        id: 22,
+        img: "../assets/img/electronica/electronica2.jpeg",
+        nombre: "iPhone 13 Rosa",
+        precio: 270000,
+    },
+    {
+        id: 23,
+        img: "../assets/img/electronica/electronica3.jpeg",
+        nombre: "iPhone 13 Negro",
+        precio: 270000,
+    },
+    {
+        id: 24,
+        img: "../assets/img/electronica/electronica4.jpeg",
+        nombre: "iPhone 13 Rojo",
+        precio: 270000,
+    },
+    {
+        id: 26,
+        img: "../assets/img/electronica/electronica6.jpeg",
+        nombre: "Apple Watch Series 7 (GPS, 41mm) ",
+        precio: 130000,
+    },
+    {
+        id: 27,
+        img: "../assets/img/electronica/electronica7.jpeg",
+        nombre: "Apple AirPods con estuche de carga - Blanco",
+        precio: 30000,
     }
-
 ];
