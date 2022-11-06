@@ -94,6 +94,30 @@ const productos = [
         img: "../assets/img/ropa/whiteSweter.jpg",
         nombre: "Sweter blanco",
         precio: 12000
+    },
+    {
+        id: 17,
+        img: "../assets/img/juguetes/juguete1.jpg",
+        nombre: "Juguete 1",
+        precio: 5600,
+    },
+    {
+        id: 18,
+        img: "../assets/img/juguetes/juguete2.jpg" ,
+        nombre: "Juguete 2",
+        precio: 4200,
+    },
+    {
+        id: 19,
+        img: "../assets/img/juguetes/juguete3.jpg",
+        nombre: "Juguete 3",
+        precio: 4900,
+    },
+    {
+        id: 20,
+        img: "../assets/img/juguetes/juguete4.jpg",
+        nombre: "Juguete 4",
+        precio: 4700,
     }
 
 ];

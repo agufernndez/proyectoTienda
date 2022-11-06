@@ -17,12 +17,12 @@ const productos = [
         nombre: "Juguete 3",
         precio: 4900,
     },
-    // {
-    //     id: 4,
-    //     img: "../assets/img/ropa/brownSweter.jpg",
-    //     nombre: "Sweter marrón",
-    //     precio: 10500,
-    // },
+    {
+        id: 4,
+        img: "../assets/img/juguetes/juguete4.jpg",
+        nombre: "Juguete 4",
+        precio: 4700,
+    }
     // {
     //     id: 5,
     //     img: "../assets/img/ropa/creamSweter.jpg",
