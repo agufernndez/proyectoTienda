@@ -585,7 +585,7 @@ a {
     margin-bottom: 0%;
 }
 
-    /* **********MY ORDERS PAGE****************** */
+    /* **********MIS COMPRAS****************** */
 
     .mainMyOrders {
         width: 90vw;
@@ -820,9 +820,9 @@ a {
         padding-top: 0;
     }
 
-    /* **********MY ORDERS PAGE****************** */
+    /* **********MIS COMPRAS****************** */
     .mainMyOrders {
-        width: 50vw;
+        width: 30vw;
         min-width: 400pgit x;
         margin-top: 50px;
         font-size: var(--lg);
